@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <h2 class="mb-3">Add New Book</h2>
+  <form [formGroup]="bookForm" (ngSubmit)="addBook()">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title:</label>
+      <input type="text" id="title" formControlName="title" class="form-control" placeholder="Enter book title" />
+    </div>
+
+    <div class="mb-3">
+      <label for="author" class="form-label">Author:</label>
+      <input type="text" id="author" formControlName="author" class="form-control" placeholder="Enter author's name" />
+    </div>
+
+    <div class="mb-3">
+      <label for="yearPublished" class="form-label">Year Published:</label>
+      <input type="text" id="yearPublished" formControlName="yearPublished" class="form-control" placeholder="Enter publication year" />
+    </div>
+
+    <div class="mt-4">
+      <button type="submit" class="btn btn-outline-primary">Add Book</button>
+    </div>
+  </form>
+</div>

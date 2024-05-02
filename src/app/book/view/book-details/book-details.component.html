@@ -1,0 +1,52 @@
+<div *ngIf="book" class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title mb-4">Book Information</h2>
+
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12">
+          <span class="text-bold">Book ID:</span>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <span>{{ book.id }}</span>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12">
+          <span class="text-bold">Title:</span>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <span>{{ book.title }}</span>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12">
+          <span class="text-bold">Author:</span>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <span>{{ book.author }}</span>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12">
+          <span class="text-bold">Year Published:</span>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <span>{{ book.yearPublished }}</span>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12">
+          <span class="text-bold">Library:</span>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <span>{{ book.library }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

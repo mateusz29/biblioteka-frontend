@@ -1,0 +1,67 @@
+<div *ngIf="library" class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title mb-4">Information about the library</h2>
+
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12">
+          <span class="text-bold">ID:</span>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <span>{{ library.id }}</span>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12">
+          <span class="text-bold">Name:</span>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <span>{{ library.name }}</span>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12">
+          <span class="text-bold">Year founded:</span>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <span>{{ library.yearFounded }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <h2>Books</h2>
+  <table class="table table-striped table-hover">
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Year published</th>
+      <th>Details</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.yearPublished }}</td>
+      <td>
+        <button class="btn btn-info" [routerLink]="['/books', book.id]">Details</button>
+      </td>
+      <td>
+        <button class="btn btn-warning" [routerLink]="['/books', book.id, 'edit']">Edit</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteBook(book.id)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <p><button class="btn btn-primary mb-3" [routerLink]="['/libraries', libraryId, 'add-book']">Add new book</button></p>
+</div>

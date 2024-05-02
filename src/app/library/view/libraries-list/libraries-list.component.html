@@ -1,0 +1,31 @@
+<div class="container mt-4">
+  <h2 class="mb-4">Libraries</h2>
+  <table class="table table-striped table-hover">
+    <thead class="table-borderless">
+    <tr>
+      <th>Name</th>
+      <th>Year Founded</th>
+      <th>Details</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let library of libraries">
+      <td>{{ library.name }}</td>
+      <td>{{ library.yearFounded }}</td>
+      <td>
+        <button class="btn btn-info" [routerLink]="['/libraries', library.id]">Details</button>
+      </td>
+      <td>
+        <button class="btn btn-warning" [routerLink]="['/libraries', library.id, 'edit']">Edit</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteLibrary(library.id)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary mt-3" routerLink="/add-library">Add New Library</button>
+
+</div>

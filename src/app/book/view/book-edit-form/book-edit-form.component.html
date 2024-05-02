@@ -1,0 +1,46 @@
+<div *ngIf="bookForm" class="container mt-4">
+  <h2 class="mb-4">Edit Book</h2>
+  <form [formGroup]="bookForm" (ngSubmit)="updateBook()">
+
+    <div class="form-group row">
+      <label for="bookId" class="col-md-3 col-form-label">Book ID:</label>
+      <div class="col-md-9">
+        <input type="text" id="bookId" formControlName="bookId" readonly class="form-control" />
+      </div>
+    </div>
+
+    <div class="form-group row mt-2">
+      <label for="libraryId" class="col-md-3 col-form-label">Library ID:</label>
+      <div class="col-md-9">
+        <input type="text" id="libraryId" formControlName="libraryId" readonly class="form-control" />
+      </div>
+    </div>
+
+    <div class="form-group row mt-2">
+      <label for="title" class="col-md-3 col-form-label">Title:</label>
+      <div class="col-md-9">
+        <input type="text" id="title" formControlName="title" class="form-control" />
+      </div>
+    </div>
+
+    <div class="form-group row mt-2">
+      <label for="author" class="col-md-3 col-form-label">Author:</label>
+      <div class="col-md-9">
+        <input type="text" id="author" formControlName="author" class="form-control" />
+      </div>
+    </div>
+
+    <div class="form-group row mt-2">
+      <label for="yearPublished" class="col-md-3 col-form-label">Year Published:</label>
+      <div class="col-md-9">
+        <input type="text" id="yearPublished" formControlName="yearPublished" class="form-control" />
+      </div>
+    </div>
+
+    <div class="form-group row mt-4">
+      <div class="col">
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </form>
+</div>
