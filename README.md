@@ -1,6 +1,27 @@
 # BibliotekaAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+BibliotekaAngular is the front-end application for the Biblioteka microservices project. This Angular application provides a user interface for managing libraries and books, interacting seamlessly with the back-end microservices to offer a comprehensive library management system.
+
+## Overview
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3. It offers a range of functionalities to manage libraries and books, including adding, editing, viewing details, and listing both libraries and books. The application is designed to work in conjunction with the Biblioteka microservices, providing a complete solution for library management.
+
+## Key Features
+
+- **Library Management**: Add new libraries, edit existing ones, view detailed information, and list all libraries.
+- **Book Management**: Add new books to libraries, edit book details, view detailed information about books, and list all books within a library.
+
+## Routing
+
+The application uses Angular routing to navigate between different views. The available routes are defined in `app-routing.module.ts`:
+
+- `/libraries`: List of all libraries
+- `/add-library`: Form to add a new library
+- `/libraries/:id/edit`: Form to edit an existing library
+- `/libraries/:id`: Details of a specific library
+- `/libraries/:id/add-book`: Form to add a new book to a specific library
+- `/books/:id/edit`: Form to edit an existing book
+- `/books/:id`: Details of a specific book
 
 ## Running 
 
