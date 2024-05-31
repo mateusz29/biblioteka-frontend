@@ -1,6 +1,6 @@
-# BibliotekaAngular
+# BibliotekaFrontend
 
-BibliotekaAngular is the front-end application for the Biblioteka microservices project. This Angular application provides a user interface for managing libraries and books, interacting seamlessly with the back-end microservices to offer a comprehensive library management system.
+BibliotekaFrontned is the front-end application for the Biblioteka Backedn project. This Angular application provides a user interface for managing libraries and books, interacting seamlessly with the back-end microservices to offer a comprehensive library management system.
 
 ## Overview
 
