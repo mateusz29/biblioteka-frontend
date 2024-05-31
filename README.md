@@ -1,6 +1,6 @@
 # BibliotekaFrontend
 
-BibliotekaFrontned is the front-end application for the Biblioteka Backedn project. This Angular application provides a user interface for managing libraries and books, interacting seamlessly with the back-end microservices to offer a comprehensive library management system.
+BibliotekaFrontend is the front-end application for the Biblioteka Backedn project. This Angular application provides a user interface for managing libraries and books, interacting seamlessly with the back-end microservices to offer a comprehensive library management system.
 
 ## Overview
 
